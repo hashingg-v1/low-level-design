@@ -1,0 +1,9 @@
+Client attaches observers → WeatherStation holds list
+↓
+Weather changes → setTemperature()
+↓
+WeatherStation calls notify()
+↓
+notify() loops over observers → calls observer->update()
+↓
+Each observer displays new data
